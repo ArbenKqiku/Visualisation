@@ -1,8 +1,5 @@
-library(googlesheets)
-gs_auth("/Users/arbenkqiku/Desktop/GitHub/Scripts/googlesheets_token_arben.rds")
-
-sector_language_cpa = gs_title("MSC - CPA per language and sector")
-sector_language_cpa_table = gs_read(ss = sector_language_cpa, ws = "Rapport sur les performances des campagnes")
+library(dyplr)
+library(tidyverse)
 
 sector_language_cpa_table = 
     sector_language_cpa_table %>%
